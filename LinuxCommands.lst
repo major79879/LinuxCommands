@@ -1,4 +1,10 @@
-## =============================== +++ Major Command +++ ================================ ##
+## ============================= +++ Major Linux Commands +++ ============================ ##
+##                                                                                                                                                                           ##
+## ================================ # Verion Date 30-10-2026 # ============================== ##
+##                                                                                                                                                                           ##
+## ============ # Install & Update Major Linux Commands  - John Kamel & Robin John # ============ ##
+##                                                                                                                                                                           ##
+wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
 
 ## === # Python 3 # === ##
 
