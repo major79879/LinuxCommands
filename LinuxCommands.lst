@@ -6,6 +6,11 @@
 ##                                                                                                                                                                           ##
 wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
 
+## === # Major Fast Order # === ##
+
+# # Clean Memory Order # #
+echo 3 > /proc/sys/vm/drop_caches && sync
+
 ## === # Python 3 # === ##
 
 # # Install # #
