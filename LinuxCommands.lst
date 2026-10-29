@@ -8,6 +8,9 @@ wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/
 
 ## === # Major Fast Order # === ##
 
+# # SoftCam Updater Order # #
+wget -qO- https://raw.githubusercontent.com/major79879/MajorKey/refs/heads/main/SoftCam%20Script%20Updater.sh | bash
+
 # # Clean Memory Order # #
 echo 3 > /proc/sys/vm/drop_caches && sync
 
