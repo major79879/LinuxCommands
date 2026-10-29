@@ -11,6 +11,12 @@ wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/
 # # Clean Memory Order # #
 echo 3 > /proc/sys/vm/drop_caches && sync
 
+# # Restart Emu (NCam - OSCam) Order # #
+killall -9 ncam oscam 2>/dev/null; sleep 1; /usr/bin/ncam &
+
+# # Restart GUI Order # #
+init 4 && init 3
+
 ## === # Python 3 # === ##
 
 # # Install # #
