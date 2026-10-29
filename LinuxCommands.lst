@@ -1,0 +1,801 @@
+## =============================== +++ Major Command +++ ================================ ##
+
+## === # Python 3 # === ##
+
+# # Install # #
+opkg install python3-requests
+
+# # Install # #
+opkg install python3-sqlite3 
+
+# # Install # #
+opkg install python3-beautifulsoup4
+
+# # Install # #
+opkg install python3-pycrypto 
+
+# # Install # #
+opkg install python3-urllib3
+
+## === # Update Image & Feed # === ##
+
+# # Update # #
+opkg update && opkg upgrade 
+
+# # Install # #
+opkg update && opkg install wget
+
+# # Install # #
+opkg install --force-reinstall enigma2-plugin-systemplugins-serviceapp exteplayer3 ffmpeg gstplayer  
+  
+# # Install # #
+opkg update && opkg install wget && opkg install enigma2-plugin-systemplugins-serviceapp && opkg install gstreamer1.0-plugins-good && opkg install gstreamer1.0-plugins-base && opkg install gstreamer1.0-plugins-bad && opkg install gstreamer1.0-plugins-ugly &&  opkg install gstreamer1.0-plugins-bad-meta  
+
+## === # Libarary Command # === ##
+
+# # Install # #
+opkg install nano
+
+# # Install # #
+opkg install wget
+
+# # Install # #
+opkg install curl
+
+# # Install # #
+opkg install astra-sm
+
+# # Install # #
+opkg install dvbsnoop
+
+# # Install # #
+opkg install ffmpeg
+
+# # Install # # لتنظيف الرام لأجهزة إنيجما
+opkg install enigma2-plugin-extensions-clearmem
+
+# # Install # # مشغل الميديا لأجهزة إنيجما
+opkg install enigma2-plugin-extensions-e2iplayer-deps
+
+# # Install # # متصفح لتشغيل اليوتيوب لأجهزة إنيجما
+opkg install enigma2-plugin-extensions-chromium2
+
+# # Install # # بلجن الطقس لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-weatherplugin
+
+# # Install # # بلجن أوتو تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-autotimer
+
+# # Install # # بلجن يوتيوب تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-youtube
+
+# # Install # # بلجن فايل كوماندر تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-filecommander
+
+# # Install # # بلجن دريم اكسبلورر تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-dreamexplorer
+
+# # Install # # بلجن سيريوس تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-seriesplugin
+
+# # Install # # بلجن اكستريمي تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-xstreamity
+
+# # Install # # بلجن إي بي حي امبورت تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-epgimport
+
+# # Install # # بلجن اوبن ويب اف تايمر لأجهزة إنيجما
+opkg update && opkg install enigma2-plugin-extensions-openwebif
+
+# # Install # #
+opkg install qtwebengine
+
+# # Install # #
+opkg install enigma2-plugin-drivers-ntfs-3g
+
+# # Install # #
+opkg install enigma2-plugin-drivers-exfat
+
+# # Install # #
+opkg install gstplayer libgstplayer-1.0-0
+
+# # Install # #
+opkg install livestreamer
+
+# # Install # #
+opkg install livestreamersrv
+
+# # Install # #
+opkg install libusb-1.0-0
+
+# # Install # #
+opkg install libssl1.0.2
+
+# # Install # #
+opkg install libcurl4
+
+# # Install # #
+opkg install libpcsclite1
+
+# # Install # #
+opkg install libcrypto1.0.2 
+
+# # Install # #
+opkg install gstplayer libgstplayer-1.0-0 
+
+# # Install # #
+opkg install exteplayer3
+
+# # Install # #
+opkg install gstplayer
+
+# # Install # #
+opkg install enigma2-plugin-systemplugins-serviceapp
+
+# # Install # #
+opkg install --force-reinstall enigma2-plugin-systemplugins-serviceapp
+
+# # Install # #
+opkg install gstreamer1.0-plugins-good
+
+# # Install # #
+opkg install gstreamer1.0-plugins-base
+
+# # Install # #
+opkg install gstreamer1.0-plugins-bad
+
+# # Install # #
+opkg install gstreamer1.0-plugins-ugly
+
+# # Install # #
+opkg install gstreamer1.0-plugins-bad-meta
+
+## === # OpenATV SoftCam Feed # === ##
+
+# # Install # #
+wget -O - -q http://updates.mynonpublic.com/oea/feed | bash
+  
+# # Install # #
+opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenAtv/OpenATV_softcam_feed_v8.0.ipk
+ 
+# # Install # #
+opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenAtv/softcam-feed-universal_4.5-r0_all.ipk
+
+## === # OpenEight SoftCam Feed # === ##
+
+# # Install # #
+opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenEight/enigma2-plugin-softcam.feed-openeight_6.6_all.ipk
+
+## === # DNS Google # === ##
+
+# # Install # #
+echo "nameserver 8.8.8.8" > /etc/resolv.conf; echo "nameserver 8.8.4.4" >> /etc/resolv.conf; killall -9 enigma2
+
+## ================================= +++ Major Panels +++ ================================= ##
+
+## === # AJPanel - AMAJamry # = # لوحة أدوات متكاملة لإدارة إضافات وأدوات إنيجما فى مكان واحد # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan/
+
+## === # AJPanel Menu - Tarek Zoka # = # نسخة مخصصة من لوحة إيه جي بانل مزودة بقوائم وأدوات إضافية # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://raw.githubusercontent.com/tarekzoka/ajpanel/refs/heads/main/ajpanel_menu1.sh -O - | /bin/sh
+
+## === # AJPanel Menu - Emil Nabil # = # نسخة مخصصة من لوحة إيه جي بانل مزودة بقوائم وأدوات إضافية # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://dreambox4u.com/emilnabil237/plugins/ajpanel/new/emil-panel-lite.sh -O - | /bin/sh
+
+## === # AJPanel Menu - Hamdy Ahmed # = # نسخة مخصصة من لوحة إيه جي بانل مزودة بقوائم وأدوات إضافية # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://raw.githubusercontent.com/Ham-ahmed/Secript-Panel/main/1New-Ajpanel-Panel-v5.0_HAN.sh -O - | /bin/sh
+
+## === # Major panel - John Kamel # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/major79879/Major_E2_Panel_AJP/refs/heads/main/Major%20E2%20Panel_AJP.sh | /bin/sh
+
+## === # Linuxsat panel - Belfagor # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/LinuxsatPanel/main/installer.sh -O - | /bin/sh
+
+## === # Magic Panel Gold - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ham-ahmed/G10/refs/heads/main/MagicPanelGold-install.sh -O - | /bin/sh
+
+## === # Magic Panel Max - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ham-ahmed/G12/refs/heads/main/MagicPanelMax-install.sh -O - | /bin/sh
+
+
+## === # Emil Panel Pro - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
+
+## === # Emil Panel - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EmilPanel/emilpanel.sh -O - | /bin/sh
+
+## === # Smart Addons Panel - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
+
+## === # Corvo Boys Panel Moded - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/corvoboys-panel/corvoboys-panel.sh -O - | /bin/sh
+
+## === # Elie Sat Panel Grid - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/eliesatpanelgrid/eliesatpanelgrid/main/menus/Installer.py | python3
+
+## === # Enigma Play Repo - Ahmad Arjan # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/Ahmadarjan1/EnigmaPlay-Repo/main/install.sh | sh
+
+## === # Panel AIO - Oli Oli # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q -O - https://raw.githubusercontent.com/OliOli2013/PanelAIO-Plugin/main/installer.sh | /bin/sh
+
+## === # Online 4 Tech - Ahmed Romeh # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -O /tmp/online4tech.sh https://online4tech.github.io/online4Tech/install.sh && chmod +x /tmp/online4tech.sh && /tmp/online4tech.sh
+
+## === # Mohamed Store - Mahamed Iraqy # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -O - https://raw.githubusercontent.com/wwwgoper77-wq/MohamedStore/main/install.sh | sh
+
+## === # Super Backup Images - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://github.com/emilnabil/download-plugins/raw/refs/heads/main/SuperBackupImages/SuperBackupImages.sh -O - | /bin/sh
+
+## === # Dream Arabia - Scripts # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+
+# # Install # #
+wget -q --no-check-certificate http://dreambox4u.com/dreamarabia/scripts/installer.sh -O - | /bin/sh
+
+## ============================== +++ Major Tools Plugins +++ ============================== ##
+
+## === # Arabic Savior - Fairbird # = # تحسين دعم اللغة العربية وإصلاح مشاكل الخطوط والترجمة # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -r /usr/lib/enigma2/python/Plugins/Extensions/ArabicSavior
+
+## === # Arabic Savior - Mohamded Nasser # = # تحسين دعم اللغة العربية وإصلاح مشاكل الخطوط والترجمة # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/ArabicSavior/refs/heads/main/myinstaller.sh -O - | /bin/sh
+
+# # Remove # #
+rm -r /usr/lib/enigma2/python/Plugins/Extensions/ArabicSavior
+
+## === # Crash Log Viewer - Belfagor # = # أداة عرض و إظهار أخطاء النظام # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/CrashlogViewer/main/installer.sh -O - | /bin/bash
+
+## === # Emil Remove Package - Emil Nabil # = # أداة حذف الاضافات # === ## 
+
+# # Install # #
+wget -q "--no-check-certificate" https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EmilRemovePackage/EmilRemovePackage.sh -O - | /bin/sh
+
+## === # Raed Quick Signal - Fairbird # = # أداة إظهار الإشارة على القنوات # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/RaedQuickSignal
+
+## === # Time Shift Delay -  Mosad Pro # = # أداة إظهار التايم شيفت داخل صوت القناة # === ## 
+
+# # Install # #
+wget -qO - http://dreambox4u.com/mosadpro/scripts/timeshift-delay.sh | sh
+
+## === # Custom Channel Selection - Mohamed Nasser # = # أداة التحكم في شكل عرض قائمة القنوات # === ## 
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/customchannelselection/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # Backup Flash - Fairbird # = # أداة لإنشاء نسخة احتياطية كاملة من النظام الحالي واستعادتها بسهولة # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/backupflash/main/installer.sh -O - | /bin/sh
+
+## === # XML Update - By Iet5 # = # أداة لتحديث ملفات وترددات الأقمار # === ## 
+
+# # Install # #
+wget -qO- "https://raw.githubusercontent.com/Saiedf/XMLUpdateByIet5/main/installer_xmlupdatebyiet5_auto.sh" | /bin/sh
+
+## === # Disk Cpu Temp - Saiedf # = # أداة لقياس وإظهار درجة حرارة الجهاز # === ## 
+
+# # Install # #
+wget -qO- "https://raw.githubusercontent.com/Saiedf/DiskCpuTemp/main/installer_diskcputemp_auto.sh" | /bin/sh
+
+# Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/DiskCpuTemp
+
+## === # Enigma 2 Uninstalle - Saiedf # = # أداة حذف الاضافات # === ## 
+
+# # Install # #
+wget -qO- "https://raw.githubusercontent.com/Saiedf/Enigma2Uninstaller/main/installer_enigma2uninstaller_auto.sh" | /bin/sh
+
+## === # Gemini Locale GP4 - Blue Panel # = # أداة جيمني لإضافة العديد من الوظائف المتقدمة وأدوات الإدارة # === ## 
+
+# # Install # #
+apt update && wget -O /tmp/geminilocale_all.deb http://download.blue-panel.com/geminilocale_gp4.php && apt install -y /tmp/geminilocale_all.deb
+
+## === # New Virtual Keyboard - Fairbird # = # أداة كيبوورد متطورة # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/NewVirtualKeyBoard/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Plugins/SystemPlugins/NewVirtualKeyboard
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Screens/NewVirtualKeyBoard.py
+
+## ============================= +++ Major SoftCams Plugins +++ ============================ ##
+
+## === # NCam EMU - Fairbird # = # أداة لإضافة و إدارة و تشغيل إشتراكات السوفتكام # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - | /bin/sh
+
+## === # Oscam Emu - Linuxsat # = # أداة لإضافة و إدارة و تشغيل إشتراكات السوفتكام # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/OsCam_EMU/main/installer.sh -O - | /bin/sh
+
+## === # Oscamicam - Kitte888 # = # أداة لإضافة و إدارة و تشغيل إشتراكات السوفتكام # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/OSCamicam_Kitte888/main/installer.sh -O - | /bin/sh
+
+## === # Powercam - MohameD OS # = # أداة لإضافة و إدارة و تشغيل إشتراكات السوفتكام # === ## 
+
+# # Install # #
+wget -qO- --no-check-certificate "https://gitlab.com/MOHAMED_OS/dz_store/-/raw/main/Cam_Emulator/online-setup" | bash -s powercam
+
+## === # Live Feed # = # أداة للبحث عن الفيدات # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://live-feed.net/enigma2/installer.sh -O - | /bin/sh
+
+## === # Key Adder - Fairbird # = # أداة لإدخال وتحديث شفرات ملف السوفتكام # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/KeyAdder
+
+## === # Fury Biss - Islam Salama # = # أداة للبحث عن الفيدات وإظهار وإدخال شفراتها # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/FuryBiss/refs/heads/main/fury/installer.sh -O - | /bin/sh
+
+## === # E2 Biss Key Editor - Ismail El Khouly # = # أداة لإدخال شفرات القنوات # === ##
+
+# # Install # #
+wget -q -O - https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/bash
+
+## === # Pom Biss - Shref # = # أداة لإدخال شفرات القنوات # === ##
+
+# # Install # #
+cd /tmp && wget https://raw.githubusercontent.com/Shr776/PomBiss/main/installer.sh && sh installer.sh
+
+## === # Satelliweb E2 - Abdel Wahab # = # أداة متخصصة لمتابعة بيانات وأخبار الأقمار والقنوات # === ##
+
+# # Install # #
+wget -q --no-check-certificate http://dreambox4u.com/dreamarabia/Satelliweb_e2/install_satelliweb_test.sh -O - | bash
+
+## === # Free Server - Levi 45 # = # أداة لإضافة سيرفرات مجانية للسوفتكام # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/levi45-freeserver/main/installer.sh -O - | /bin/sh
+
+## === # Multi Cam Adder - Emil Nabil # = # أداة إضافة لإدارة وإضافة أنظمة السوفتكام المختلفة وتسهيل التبديل بينها # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/MultiCamAdder/installer.sh -O - | /bin/sh
+
+## === # Khaled Cam Manager - Khaled Ali # = # أداة لإدارة وإضافة أنظمة السوفتكام المختلفة وتسهيل التبديل بينها # === ##
+
+# # Install # #
+wget --no-check-certificate -qO- "https://raw.githubusercontent.com/KhaledAli65/Backup/refs/heads/main/Backup_image/install_KhaledCamManager.sh" > /tmp/install_KhaledCamManager.sh && chmod 755 /tmp/install_KhaledCamManager.sh && /tmp/install_KhaledCamManager.sh
+
+## === # Server Eagle Sat - Elie # = # أداة إضافية خاصة بمنصة إيجل سات لتوسيع وظائف الجهاز # === ##
+
+# # Install # #
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/eliesat/ServerEagleSat/main/installer.sh | bash
+
+## ============================== +++ Major Audio Plugins +++ ============================== ##
+
+## === # IP Audio Pro - Zakaria Khadiri # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/refs/heads/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPAudioPro
+
+## === # Ultra Audio - Ahmed El Hadary # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/K3bOra/UltraAudio/main/install.sh | /bin/sh
+
+## === # Xtream 2 Audio - Emil Nabil # = # أداة تشغيل وتحويل القنوات الصوتية من خدمات الإكستريم # === ##
+
+# # Install # #
+wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/Xtream2Audio/Xtream2Audio.sh -O - | /bin/sh
+
+## === # Audio Selection Patcher - Mohamed Nasser # = # أداة لإضافة خواص للصوتيات # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/audioselectionpatcher/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # Audio Shift - X Fayz # = # أداة سريعة لتبديل المسارات الصوتية داخل القنوات والأفلام بسهولة # === ##
+
+# # Install # #
+wget -O - https://xfayez95.github.io/audioshift/installer.sh | sh
+
+## === # IP Audio Plus - Ahmed Arjan # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ahmadarjan1/IPAudioPlus-Releases/refs/heads/main/installer.sh -O - | /bin/bash
+
+## === # Alkuds Ipaudio - Ibrahim Hamdy # = # أداة تشغيل الصوتيات والأي بي تي في # === #
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/xximhxx/Alkuds-ipaudio-MAC-Xtreme-Player/main/installer.sh | sh
+
+## === # IP Audio V8.11 - Mohamed Nasser # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+
+# # Install # #
+opkg install https://github.com/popking159/ipaudio/releases/download/IPAudio/enigma2-plugin-extensions-ipaudio_8.11_all.ipk
+
+## === # Orange Audio - Mohamed Nasser # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/popking159/OrangeAudio/main/installer.sh | sh
+
+## === # My Hits - Mohamed Nasser # = # أداة تحميل وتشغيل الأغاني # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/myhits/refs/heads/main/myinstaller.sh | /bin/sh
+
+## ============================== +++ Major Subtitle Plugins +++ ============================ ##
+
+## === # Subs Support Pro - Mohamed Nasser # = # أداة لتحميل وإدارة الترجمات للمحتوى المرئى # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Subssupportpro/
+
+## === # Subs Support - Mohamed Nasser # = # أداة لتحميل وإدارة الترجمات للمحتوى المرئى # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://github.com/popking159/ssupport/raw/main/subssupport-install.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Subssupport/
+
+## === # My Translator V1.74 - Ismail El Khouly # = # أداة لترجمة النصوص والصوت داخل القنوات # === ##
+
+# # Install # #
+wget -O /tmp/mytranslator.ipk "https://github.com/ismailelkhooly/Ismail-/raw/refs/heads/main/enigma2-plugin-extensions-mytranslator_1.74.ipk" && opkg install --force-reinstall /tmp/mytranslator.ipk && rm -f /tmp/mytranslator.ipk
+
+## === # My Translator V1.75 - Ismail El Khouly # = # أداة لترجمة النصوص والصوت داخل القنوات # === ##
+
+# # Install # #
+wget -O /tmp/mytranslator.ipk "https://github.com/ismailelkhooly/Ismail-/raw/refs/heads/main/enigma2-plugin-extensions-mytranslator_1.75.ipk" && opkg install --force-reinstall /tmp/mytranslator.ipk && rm -f /tmp/mytranslator.ipk
+
+## === # Subextractor Lite - Arian 7S # = # أداة لاستخراج الترجمات المدمجة وإنشاء ملفات ترجمة مستقلة # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/Arian7s/SubExtractorLite/main/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/subextractorlite
+
+## === # AI Subtitles - Hmeng 80 # = # مترجم متعدد اللغات لترجمة النصوص داخل القنوات # === ##
+
+# # Remove # #
+wget -q --no-check-certificate https://gitlab.com/hmeng80/extensions/-/raw/main/AISubtitles/aisubtitles.sh -O - | /bin/sh
+
+## === # Auto Sub - HBK 2010 # = # أداة لإنشاء ترجمات تلقائية للمحتوى المرئي باستخدام تقنيات التعرف على الصوت # === ##
+
+# # Install # #
+wget -q -O /tmp/AutoSub.tar.gz https://raw.githubusercontent.com/HBK2010/AutoSub/main/AutoSub.tar.gz && tar xzf /tmp/AutoSub.tar.gz -C /usr/lib/enigma2/python/Plugins/Extensions
+
+## =============================== +++ Major EPG Plugins +++ ============================== ##
+
+## === # EPG Import - Saiedf # = # أداة إستيراد وتحديث بيانات دليل البرامج الإلكتروني من مصادر متعددة # === ##
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/Saiedf/EPGImport/main/installer_epgimportiet5_auto.sh | /bin/sh
+
+## === # TMBD - Biko # = # إضافة لجلب وعرض معلومات الأفلام والمسلسلات # === #
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/TMBD/main/installer.sh -O - | /bin/sh
+
+## === # TMBD Search - Ciefp # = # إضافة لجلب وعرض معلومات الأفلام والمسلسلات # === #
+
+# # Install # #
+wget -q https://raw.githubusercontent.com/ciefp/CiefpTMDBSearch/main/installer.sh -O - | /bin/sh
+
+## === # Youre Watching - Asdrere ALT # أداة عرض معلومات الافلام بطريقة جذابة # === ##
+
+# # Install # #
+wget --no-check-certificate -qO- "https://raw.githubusercontent.com/asdrere123-alt/YoureWatching/main/install_yourewatching.sh?t=$(date +%s)" | bash
+
+## === # EPG Grabber - Ziko # = # أداة إستيراد وتحديث بيانات دليل البرامج الإلكتروني من مصادر متعددة # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/ziko-ZR1/Epg-plugin/master/Download/installer.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/EPGGrabber
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/EPGGrabber/api/epg_status.json
+
+## =============================== +++ Major IPTV Plugins +++ ============================== ##
+
+## === # E2I Player - OE Mirrors # = # أداة تشغيل المحتوى المرئي عبر الإنترنت من مصادر متعددة # === ## 
+
+# # Install # #
+wget -q https://raw.githubusercontent.com/oe-mirrors/e2iplayer/refs/heads/python3/e2iplayer_install.sh -O - | /bin/sh
+
+## === # E2I Player - Mohamed OS # = # أداة تشغيل المحتوى المرئي عبر الإنترنت من مصادر متعددة # === ## 
+
+# # Install # #
+wget --no-check-certificate -qO - "https://raw.githubusercontent.com/MOHAMED19OS/Install_E2I/refs/heads/main/online-setup.sh" | bash
+
+# # Install # #
+opkg install enigma2-plugin-extensions-e2iplayer-deps
+
+## === # E2I Player Hostes - By Angel Heart # = # تحديث واستكمال هوستات بلاجن إيه تو بلاير # === ##  
+
+# # Install # #
+wget -q --no-check-certificate https://github.com/angelheart150/My_e2iplayer_hosts/raw/main/install-e2iplayer-update-hosts.sh -O - | /bin/sh
+
+## === # TSI Player - By Angel Heart # = # إضافة تي إس إيه بلاير لتحديث واستكمال هوستات بلاجن إيه تو بلاير # === ## 
+
+# # Install # #
+wget -q "--no-check-certificate" https://github.com/angelheart150/My-tsiplayer/raw/main/install-tsiplayer-update-hosts.sh -O - | /bin/sh
+
+## === # E2I Player - Mohamed Nasser # = # أداة تشغيل المحتوى المرئي عبر الإنترنت من مصادر متعددة # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://github.com/popking159/mye2iplayer/raw/main/update_e2iplayer_patch.sh -O - | /bin/sh
+
+# # Remove # #
+rm -r /usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer
+
+## === # My Streamer - Mohamed Nasser # = # أداة تشغيل أي بي تي في للمواقع المجانية # === ## 
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/MyStreamer/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # Xtream New - Ahmed Hussein # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget -q --no-check-certificate "https://raw.githubusercontent.com/ahmedhussein4342-lgtm/XtreamNew/main/install_xtreamnew.sh?cb=$(date +%s)" -O - | /bin/sh
+
+## === # X Portal - Azrou Karim # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/azroukarim/XPortal/refs/heads/main/installer.sh -O - | /bin/sh
+
+## === # IP to SAT - Mohamed 190S # = # أداة إضافة الأي بي تي في في ملف القنوات # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/IPtoSAT/installer.sh -qO - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPtoSAT
+
+## === # Ultra Stalker - Ahmed El Hadary # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/K3bOra/-UltraStalker/main/install.sh | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/UltraStalker
+
+## === # Tivi Mate E2 - Opes Boy # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/opesboy/TiviMateE2/main/install.sh | sh
+
+## === # E Stalker - Biko # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ##
+
+wget https://raw.githubusercontent.com/biko-73/Estalker/main/installer.sh -O - | /bin/sh
+
+## === # X Streamity - Biko # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -O - | /bin/sh
+
+## === # Vavoo - Belfagor # = # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
+
+# # Install # #
+wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/vavoo/main/installer.sh -O - | /bin/sh
+
+## === # Multi IPTV Adder - Emil Nabil # = # أداة إضافة وإدارة العديد من إشتراكات الأي بي تي في بسهولة # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/MultiIptvAdder/installer.sh -O - | /bin/sh
+
+## === # Bouquet Maker Xtream - Biko # = # أداة إنشاء وترتيب الباقات والقنوات تلقائياً من مزودي إكستريم بطريقة إحترافية # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/BouquetMakerXtream/main/installer.sh -O - | /bin/sh
+
+## === # Jedi Maker Xtream - Biko # = # أداة إنشاء الباقات والقنوات تلقائياً من مزودى إكستريم # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/JediMakerXtream/main/installer.sh -O - | /bin/sh
+
+## === # Multi Stalker - Biko # = # أداة إدارة وتشغيل عدة بوابات إستاكر من مكان واحد # === ##
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/Multi-Stalker/main/pro/installer.sh -O - | /bin/sh
+
+## === # Transmission - Dream Arabia # = # أداة تحميل تورنت متكاملة # === ##
+
+# # Install # #
+opkg install transmission transmission-client python3-transmission-rpc xz python3-beautifulsoup4 && wget -q --no-check-certificate http://dreambox4u.com/dreamarabia/Transmission_e2/Transmission_e2.sh -O - | bash
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Transmission > /dev/null 2>&1
+
+## =============================== +++ Major Skin Plugins +++ ============================== ##
+
+## === # Aglare ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/skins/refs/heads/main/aglareatv/myinstaller.sh | /bin/sh
+
+## === # Aglare PLI - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -qO - https://raw.githubusercontent.com/popking159/skins/refs/heads/main/aglarepli/myinstaller.sh | /bin/sh
+
+## === # Fury Skin - Islam Salama # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
+
+## === # Cine View MLA - Habeb S # = # إسكين بواجهة سينمائية متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -qO /tmp/cineview-install.sh https://raw.githubusercontent.com/habeb-s/CineView-MLA-Install/main/cineview-install.sh && sh /tmp/cineview-install.sh
+
+## === # Obsidian FHD - Dali 44G # = # إسكين إحترافي بواجهة عصرية ومعلومات موسعة عن القنوات والمحتوى # === ## 
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/dali44g/Obsidian-FHD/main/install.sh | sh
+
+## === # jihad Skin - Ahmed S # = # إسكين إحترافي بواجهة عصرية ومعلومات موسعة عن القنوات والمحتوى # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/ahmeds200917/A…nstall_jihad.sh -O - | /bin/sh
+
+## === # Mohammed Skin # = # إسكين عربي حديث يتميز بتصميم أنيق وخفيف مع دعم أغلب الإضافات # === ##
+
+# # Install # #
+wget -q --no-check-certificate "https://raw.githubusercontent.com/mido00020/MohammedSkin/main/installer.sh" -O - | /bin/sh
+
+## === # X Dreamy - Insprion # = # إسكين إحترافي بواجهة عصرية ومعلومات موسعة عن القنوات والمحتوى # === ##
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Insprion80/Skins/main/xDreamy/installer.sh -O - | /bin/sh
+
+## === # Luka ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -O /tmp/lukaatv.ipk 'https://raw.githubusercontent.com/popking159/skins/main/lukaatv/lukaatv.ipk' && opkg install /tmp/lukaatv.ipk
+
+## === # Luka PLI - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -O /tmp/lukapli.ipk 'https://raw.githubusercontent.com/popking159/skins/main/lukapli/lukapli.ipk' && opkg install /tmp/lukapli.ipk
+
+## === # Maxy ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -O /tmp/maxyatv.ipk 'https://raw.githubusercontent.com/popking159/skins/main/maxyatv/maxyatv.ipk' && opkg install /tmp/maxyatv.ipk
+
+## === # Maxy PLI - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+
+# # Install # #
+wget -O /tmp/maxypli.ipk 'https://raw.githubusercontent.com/popking159/skins/main/maxypli/maxypli.ipk' && opkg install /tmp/maxypli.ipk
+
+## === # Metrix Poster - Mohamed Nasser # = # إضافات ومكونات وأشكال عرض حديثة للقنوات والأفلام لواجهة إسكين ماتريكس # === ##
+
+# # Install # #
+wget -O /tmp/metrix_skinparts.tar.gz 'https://raw.githubusercontent.com/popking159/skins/main/metrix_skinparts/metrix_skinparts_mnasr.tar.gz' && mkdir -p /tmp/metrix_skinparts && tar -xzf /tmp/metrix_skinparts.tar.gz -C /tmp/metrix_skinparts
+
+## === # Metrix Poster - Hmeng # = # إضافات ومكونات وأشكال عرض حديثة للقنوات والأفلام لواجهة إسكين ماتريكس # === ##
+
+# # Install # #
+wget -q --no-check-certificate https://gitlab.com/hmeng80/addons/-/raw/main/metrix-fhd-parts-ec.sh -O - | /bin/sh
+
+## ============================== +++ Major Others Plugins +++ ============================= ##
+
+## === # xtra Event - Digit Eng # = # أداة لإظهار البوسترات للأفلام والمسلسلات # === #
+
+# # Install # #
+wget -q "--no-check-certificate" https://github.com/digiteng/xtra/raw/main/xtraEvent.sh -O - | /bin/sh
+
+## === # Foot On Sat - Fairbird # = # أداة لإظهار نتائج وقنوات المباريات # === #
+
+# # Install # #
+wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
+
+# # Remove # #
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FootOnSat
+
+## === # History Zap Selector - Biko # = # أداة لإظهار القنوات المفتوحة بصورة جذابة # === #
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/History_Zap_Selector/main/installer.sh -O - | /bin/sh
+
+## === # Server Coloring - Islam Salama # = # لإضافة لون لقنواتك المفتوحة بالسيرفر الخاص بك # === #
+
+# # Install # #
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/ServerColoring/refs/heads/main/fury/installer.sh -O - | /bin/sh
+
+# === # Team Nitro - Biko # = # مجموعة أدوات وخدمات إضافية للإينجما # === #
+
+# # Install # #
+wget https://raw.githubusercontent.com/biko-73/TeamNitro/main/script/installerB.sh -O - | /bin/sh
+
+# === # Picon 25-10-2026 - Transparent # = # مجموعة بيكونز للإينجما # === #
+
+# # Install # #
+URL="https://github.com/picons/picons/releases/download/2026-10-25--00-12-17/srp-full.220x132-190x102.light.on.transparent_2026-10-25--00-12-17.hardlink.tar.xz"; [ -d /media/hdd ] && BASE=/media/hdd || { [ -d /media/usb ] && BASE=/media/usb || { [ -d /media/mmc ] && BASE=/media/mmc || BASE=/usr/share/enigma2; }; }; mkdir -p $BASE/picon && cd /tmp && wget -O picons.tar.xz "$URL" && tar -xJf picons.tar.xz -C $BASE/picon --strip-components=1 && rm -rf /usr/share/enigma2/picon && ln -sfn $BASE/picon /usr/share/enigma2/picon && rm -f picons.tar.xz && sync && killall -9 enigma2
+
+## === # My Web UI Controller - Mohamed Nasser # = # أداة لإدارة الويب # === #
+
+# # Install # #
+wget -O /tmp/MyWebUIController.tar.gz "https://raw.githubusercontent.com/popking159/mywebuicontroller/refs/heads/main/MyWebUIController.tar.gz" && tar -xzf
+
+# # Remove # #
+/tmp/MyWebUIController.tar.gz -C / && rm -f
+
+# # Remove # #
+/tmp/MyWebUIController.tar.gz && killall -9 enigma2
+
+## === # E2 Currency Pro - Ramzus # = # أداة لمعرفة أسعار العملات والذهب # === #
+
+# # Install # #
+wget -qO- https://raw.githubusercontent.com/ramzus007/E2-Currency-Pro/main/installer.sh | sh
