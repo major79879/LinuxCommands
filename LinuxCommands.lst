@@ -1,6 +1,6 @@
 ## ============================= +++ Major Linux Commands +++ ============================ ##
 ##                                                                                                                                                                           ##
-## ============================== # Version Date 30-10-2026 # ============================== ##
+## =============================== # Version Date 30-10-2026 # ============================== ##
 ##                                                                                                                                                                           ##
 ## ============ # Install & Update Major Linux Commands  - John Kamel & Robin John # ============ ##
 ##                                                                                                                                                                           ##
@@ -776,7 +776,7 @@ wget -q --no-check-certificate https://gitlab.com/hmeng80/addons/-/raw/main/metr
 
 ## ============================== +++ Major Others Plugins +++ ============================= ##
 
-## === # xtra Event - Digit Eng # = # أداة لإظهار البوسترات للأفلام والمسلسلات # === #
+## === # Xtra Event - Digit Eng # = # أداة لإظهار البوسترات للأفلام والمسلسلات # === #
 
 # # Install # #
 wget -q "--no-check-certificate" https://github.com/digiteng/xtra/raw/main/xtraEvent.sh -O - | /bin/sh
