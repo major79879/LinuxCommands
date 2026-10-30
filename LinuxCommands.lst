@@ -4,7 +4,7 @@
 ##                                                                                                                                                                           ##
 ## ============ # Install & Update Major Linux Commands  - John Kamel & Robin John # ============ ##
 ##                                                                                                                                                                           ##
-Update Major :: wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
+wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
 
 ## === # Major Fast Order # === ##
 
