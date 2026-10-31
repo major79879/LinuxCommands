@@ -226,11 +226,6 @@ wget -qO - https://raw.githubusercontent.com/major79879/Major_E2_Panel_AJP/refs/
 # # Install # #
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/LinuxsatPanel/main/installer.sh -O - | /bin/sh
 
-## === # Magic Panel Gold - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
-
-# # Install # #
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ham-ahmed/G10/refs/heads/main/MagicPanelGold-install.sh -O - | /bin/sh
-
 ## === # Magic Panel Max - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 
 # # Install # #
@@ -260,7 +255,7 @@ wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/corvoboys
 ## === # Elie Sat Panel Grid - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 
 # # Install # #
-wget -qO- https://raw.githubusercontent.com/eliesatpanelgrid/eliesatpanelgrid/main/menus/Installer.py | python3
+opkg update >/dev/null 2>&1 && opkg install wget curl ca-certificates >/dev/null 2>&1 && wget -qO- https://dreambox4u.com/eliesat/panel/eliesatpanelgrid.sh | sh
 
 ## === # Enigma Play Repo - Ahmad Arjan # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 
