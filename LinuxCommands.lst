@@ -1,10 +1,10 @@
 ## ============================= +++ Major Linux Commands +++ ============================ ##
 ##                                                                                                                                                                           ##
-## =============================== # Version Date 03-11-2026 # ============================== ##
+## =============================== # Version Date 04-11-2026 # ============================== ##
 ##                                                                                                                                                                           ##
 ## ============ # Install & Update Major Linux Commands  - John Kamel & Robin John # ============ ##
 
-## ================================= +++ Fast Order +++ ================================= ##
+## ================================== +++ Fast Order +++ ================================== ##
 
 ## === # Update Linux Commands - John Kamel # = # تحديث ملف أوامر اللينوكس # === ##                                                                                                                                                                        ##
 wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
@@ -12,7 +12,79 @@ wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/
 ## === # Update SoftCam Key - John Kamel # = # تحديث ملف شفرات السوفتكام # === ##
 wget -qO- https://raw.githubusercontent.com/major79879/MajorKey/refs/heads/main/SoftCam%20Script%20Updater.sh | bash
 
-## ================================= +++ Panels +++ ================================= ##
+## === # AJPanel - AMAJamry # = # لوحة أدوات متكاملة لإدارة إضافات وأدوات إنيجما فى مكان واحد # === ##
+wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - | /bin/sh
+
+## === # Elie Sat Panel Grid - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+opkg update >/dev/null 2>&1 && opkg install wget curl ca-certificates >/dev/null 2>&1 && wget -qO- https://dreambox4u.com/eliesat/panel/eliesatpanelgrid.sh | sh
+
+## === # Emil Panel Pro - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
+
+## === # Magic Panel Max - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ham-ahmed/G12/refs/heads/main/MagicPanelMax-install.sh -O - | /bin/sh
+
+## === # Subs Support Pro - Mohamed Nasser # = # أداة لتحميل وإدارة الترجمات للمحتوى المرئى # === ##
+wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # My Translator - Ismail El Khouly # = # أداة لترجمة النصوص والصوت داخل القنوات # === ##
+wget -O /tmp/mytranslator.ipk "https://github.com/ismailelkhooly/Ismail-/raw/refs/heads/main/enigma2-plugin-extensions-mytranslator_1.76.ipk" && opkg install --force-reinstall /tmp/mytranslator.ipk && rm -f /tmp/mytranslator.ipk
+
+## === # Subextractor Lite - Arian 7S # = # أداة لاستخراج الترجمات المدمجة وإنشاء ملفات ترجمة مستقلة # === ##
+wget https://raw.githubusercontent.com/Arian7s/SubExtractorLite/main/installer.sh -O - | /bin/sh
+
+## === # Fury Biss - Islam Salama # = # أداة للبحث عن الفيدات وإظهار وإدخال شفراتها # === ##
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/FuryBiss/refs/heads/main/fury/installer.sh -O - | /bin/sh
+
+## === # E2 Biss Key Editor - Ismail El Khouly # = # أداة لإدخال شفرات القنوات # === ##
+wget -q -O - https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/bash
+
+## === # E2I Player - Mohamed OS # = # أداة تشغيل المحتوى المرئي عبر الإنترنت من مصادر متعددة # === ## 
+wget --no-check-certificate -qO - "https://raw.githubusercontent.com/MOHAMED19OS/Install_E2I/refs/heads/main/online-setup.sh" | bash
+
+## === # E2I Player Hostes - By Angel Heart # = # تحديث واستكمال هوستات بلاجن إيه تو بلاير # === ##  
+wget -q --no-check-certificate https://github.com/angelheart150/My_e2iplayer_hosts/raw/main/install-e2iplayer-update-hosts.sh -O - | /bin/sh
+
+## === # My Streamer - Mohamed Nasser # = # أداة تشغيل أي بي تي في للمواقع المجانية # === ## 
+wget -qO - https://raw.githubusercontent.com/popking159/MyStreamer/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # IP Audio Pro - Zakaria Khadiri # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/refs/heads/main/installer.sh -O - | /bin/sh
+
+## === # Ultra Audio - Ahmed El Hadary # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
+wget -qO- https://raw.githubusercontent.com/K3bOra/UltraAudio/main/install.sh | /bin/sh
+
+## === # My Hits - Mohamed Nasser # = # أداة تحميل وتشغيل الأغاني # === ##
+wget -qO - https://raw.githubusercontent.com/popking159/myhits/refs/heads/main/myinstaller.sh | /bin/sh
+
+## === # Emil Remove Package - Emil Nabil # = # أداة حذف الاضافات # === ## 
+wget -q "--no-check-certificate" https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EmilRemovePackage/EmilRemovePackage.sh -O - | /bin/sh
+
+## === # Arabic Savior - Fairbird # = # تحسين دعم اللغة العربية وإصلاح مشاكل الخطوط والترجمة # === ##
+wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
+
+## === # Raed Quick Signal - Fairbird # = # أداة إظهار الإشارة على القنوات # === ## 
+wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
+
+## === # Crash Log Viewer - Belfagor # = # أداة عرض و إظهار أخطاء النظام # === ##
+wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/CrashlogViewer/main/installer.sh -O - | /bin/bash
+
+## === # Aglare ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+wget -qO - https://raw.githubusercontent.com/popking159/skins/refs/heads/main/aglareatv/myinstaller.sh | /bin/sh
+
+## === # Fury Skin - Islam Salama # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
+
+## === # Cine View MLA - Habeb S # = # إسكين بواجهة سينمائية متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+wget -qO /tmp/cineview-install.sh https://raw.githubusercontent.com/habeb-s/CineView-MLA-Install/main/cineview-install.sh && sh /tmp/cineview-install.sh
+
+## === # Obsidian FHD - Dali 44G # = # إسكين إحترافي بواجهة عصرية ومعلومات موسعة عن القنوات والمحتوى # === ## 
+wget -qO- https://raw.githubusercontent.com/dali44g/Obsidian-FHD/main/install.sh | sh
+
+## === # Maxy ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
+wget -O /tmp/maxyatv.ipk 'https://raw.githubusercontent.com/popking159/skins/main/maxyatv/maxyatv.ipk' && opkg install /tmp/maxyatv.ipk
+
+## =================================== +++ Panels +++ ==================================== ##
 
 ## === # AJPanel - AMAJamry # = # لوحة أدوات متكاملة لإدارة إضافات وأدوات إنيجما فى مكان واحد # === ##
 wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - | /bin/sh
@@ -41,7 +113,7 @@ wget -O /tmp/online4tech.sh https://online4tech.github.io/online4Tech/install.sh
 ## === # Mohamed Store - Mahamed Iraqy # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 wget -O - https://raw.githubusercontent.com/wwwgoper77-wq/MohamedStore/main/install.sh | sh
 
-## ============================== +++ Tools Plugins +++ ============================== ##
+## ================================ +++ Tools Plugins +++ ================================= ##
 
 ## === # Arabic Savior - Fairbird # = # تحسين دعم اللغة العربية وإصلاح مشاكل الخطوط والترجمة # === ##
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
@@ -67,7 +139,7 @@ wget -O /tmp/install-skybluescan.sh https://updates.skyblue1.us/e2/install-skybl
 ## === # New Virtual Keyboard - Fairbird # = # أداة كيبوورد متطورة # === ## 
 wget https://raw.githubusercontent.com/fairbird/NewVirtualKeyBoard/main/installer.sh -O - | /bin/sh
 
-## ============================= +++ SoftCams Plugins +++ ============================ ##
+## =============================== +++ SoftCams Plugins +++ =============================== ##
 
 ## === # NCam EMU - Fairbird # = # أداة لإضافة و إدارة و تشغيل إشتراكات السوفتكام # === ## 
 wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - | /bin/sh
@@ -90,7 +162,7 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/Fu
 ## === # E2 Biss Key Editor - Ismail El Khouly # = # أداة لإدخال شفرات القنوات # === ##
 wget -q -O - https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/bash
 
-## ============================== +++ Audio Plugins +++ ============================== ##
+## ================================ +++ Audio Plugins +++ ================================= ##
 
 ## === # IP Audio Pro - Zakaria Khadiri # = # أداة تشغيل وإدارة خدمات الصوت والراديو عبر الإنترنت # === ##
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/refs/heads/main/installer.sh -O - | /bin/sh
@@ -107,7 +179,7 @@ wget -qO- https://raw.githubusercontent.com/xximhxx/Alkuds-ipaudio-MAC-Xtreme-Pl
 ## === # My Hits - Mohamed Nasser # = # أداة تحميل وتشغيل الأغاني # === ##
 wget -qO - https://raw.githubusercontent.com/popking159/myhits/refs/heads/main/myinstaller.sh | /bin/sh
 
-## ============================== +++ Subtitle Plugins +++ ============================ ##
+## ================================ +++ Subtitle Plugins +++ =============================== ##
 
 ## === # Subs Support Pro - Mohamed Nasser # = # أداة لتحميل وإدارة الترجمات للمحتوى المرئى # === ##
 wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
@@ -121,7 +193,7 @@ wget https://raw.githubusercontent.com/Arian7s/SubExtractorLite/main/installer.s
 ## === # Channel Lingo - Saiedf # = #  بلاجن شامل الترجمات المدمجة والترجمة الصوتية # === ##
 wget -O /tmp/installer_ChannelLingo_auto.sh "https://raw.githubusercontent.com/Saiedf/ChannelLingo/main/Release/UNIVERSAL/installer_ChannelLingo_auto.sh" && sh /tmp/installer_ChannelLingo_auto.sh
 
-## =============================== +++ EPG Plugins +++ ============================== ##
+## ================================= +++ EPG Plugins +++ ================================= ##
 
 ## === # EPG Import - Saiedf # = # أداة إستيراد وتحديث بيانات دليل البرامج الإلكتروني من مصادر متعددة # === ##
 wget -qO- https://raw.githubusercontent.com/Saiedf/EPGImport/main/installer_epgimportiet5_auto.sh | /bin/sh
@@ -138,7 +210,7 @@ wget --no-check-certificate -qO- "https://raw.githubusercontent.com/asdrere123-a
 ## === # EPG Grabber - Ziko # = # أداة إستيراد وتحديث بيانات دليل البرامج الإلكتروني من مصادر متعددة # === ##
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ziko-ZR1/Epg-plugin/master/Download/installer.sh -O - | /bin/sh
 
-## =============================== +++ IPTV Plugins +++ ============================== ##
+## ================================= +++ IPTV Plugins +++ ================================= ##
 
 ## === # E2I Player - OE Mirrors # = # أداة تشغيل المحتوى المرئي عبر الإنترنت من مصادر متعددة # === ## 
 wget -q https://raw.githubusercontent.com/oe-mirrors/e2iplayer/refs/heads/python3/e2iplayer_install.sh -O - | /bin/sh
@@ -167,7 +239,7 @@ wget -qO- https://raw.githubusercontent.com/K3bOra/-UltraStalker/main/install.sh
 ## === # Tivi Mate E2 - Opes Boy # أداة إضافة و تشغيل إشتراكات الأي بي تي في # === ## 
 wget -qO- https://raw.githubusercontent.com/opesboy/TiviMateE2/main/install.sh | sh
 
-## =============================== +++ Major Skin Plugins +++ ============================== ##
+## ================================= +++ Skin Plugins +++ ================================= ##
 
 ## === # Aglare ATV - Mohamed Nasser # = # إسكين بواجهة متقدمة تعرض بوسترات ومعلومات الأفلام بصورة جذابة # === ##
 wget -qO - https://raw.githubusercontent.com/popking159/skins/refs/heads/main/aglareatv/myinstaller.sh | /bin/sh
@@ -211,7 +283,7 @@ wget -O /tmp/metrix_skinparts.tar.gz 'https://raw.githubusercontent.com/popking1
 ## === # Metrix Poster - Hmeng # = # إضافات ومكونات وأشكال عرض حديثة للقنوات والأفلام لواجهة إسكين ماتريكس # === ##
 wget -q --no-check-certificate https://gitlab.com/hmeng80/addons/-/raw/main/metrix-fhd-parts-ec.sh -O - | /bin/sh
 
-## ============================== +++ Others Plugins +++ ============================= ##
+## ================================= +++ Other Plugins +++ ================================ ##
 
 ## === # Foot On Sat - Fairbird # = # أداة لإظهار نتائج وقنوات المباريات # === #
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
