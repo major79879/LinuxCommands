@@ -5,10 +5,10 @@
 
 ## ================================== +++ Fast Order +++ ================================== ##
 
-## === # Update Linux Commands - John Kamel # = # تحديث ملف أوامر اللينوكس # === ##                                                                                                                                                                        ##
+## === # Update Linux Commands - 04-10-2026 # = # تحديث ملف أوامر اللينوكس # === ##                                                                                                                                                                        ##
 wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
 
-## === # Update SoftCam Key - John Kamel # = # تحديث ملف شفرات السوفتكام # === ##
+## === # Update SoftCam Key - 30-10-2026 # = # تحديث ملف شفرات السوفتكام # === ##
 wget -qO- https://raw.githubusercontent.com/major79879/MajorKey/refs/heads/main/SoftCam%20Script%20Updater.sh | bash
 
 ## === # AJPanel - AMAJamry # = # لوحة أدوات متكاملة لإدارة إضافات وأدوات إنيجما فى مكان واحد # === ##
