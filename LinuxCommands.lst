@@ -561,6 +561,11 @@ wget https://raw.githubusercontent.com/Arian7s/SubExtractorLite/main/installer.s
 # # Remove # #
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/subextractorlite
 
+## === # Channel Lingo - Saiedf # = #  بلاجن شامل الترجمات المدمجة والترجمة الصوتية # === ##
+
+# # Install # #
+wget -O /tmp/installer_ChannelLingo_auto.sh "https://raw.githubusercontent.com/Saiedf/ChannelLingo/main/Release/UNIVERSAL/installer_ChannelLingo_auto.sh" && sh /tmp/installer_ChannelLingo_auto.sh
+
 ## === # AI Subtitles - Hmeng 80 # = # مترجم متعدد اللغات لترجمة النصوص داخل القنوات # === ##
 
 # # Remove # #
