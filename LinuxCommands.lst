@@ -1,10 +1,10 @@
 ## ============================= +++ Major Linux Commands +++ ============================ ##                                                                                                                                                                          
-## =============================== # Version Date 04-11-2026 # ============================== ##
+## =============================== # Version Date 05-11-2026 # ============================== ##
 ## ====================== # Development By - John Kamel & Robin John # ====================== ##
 ##                                                                                                                                                                           ##
 ## ================================== +++ Fast Order +++ ================================== ##
 
-## === # Update Linux Commands - 04-11-2026 # = # تحديث ملف أوامر اللينوكس # === ##                                                                                                                                                                        ##
+## === # Update Linux Commands - 05-11-2026 # = # تحديث ملف أوامر اللينوكس # === ##                                                                                                                                                                        ##
 wget -qO- https://raw.githubusercontent.com/major79879/LinuxCommands/refs/heads/main/update_linuxcommands.sh | bash
 
 ## === # Update SoftCam Key - 30-10-2026 # = # تحديث ملف شفرات السوفتكام # === ##
@@ -15,6 +15,9 @@ wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - |
 
 ## === # Elie Sat Panel Grid - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 opkg update >/dev/null 2>&1 && opkg install wget curl ca-certificates >/dev/null 2>&1 && wget -qO- https://dreambox4u.com/eliesat/panel/eliesatpanelgrid.sh | sh
+
+## === # Elie Sat Panel New - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+wget -q --no-check-certificate "https://dreambox4u.com/eliesat/ElieSatPanelInstaller/ElieSatPanelInstaller.sh?t=$(date +%s)" -O - | /bin/sh
 
 ## === # Emil Panel Pro - Emil Nabil # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
@@ -92,6 +95,9 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/
 
 ## === # Elie Sat Panel Grid - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 opkg update >/dev/null 2>&1 && opkg install wget curl ca-certificates >/dev/null 2>&1 && wget -qO- https://dreambox4u.com/eliesat/panel/eliesatpanelgrid.sh | sh
+
+## === # Elie Sat Panel New - Elie # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
+wget -q --no-check-certificate "https://dreambox4u.com/eliesat/ElieSatPanelInstaller/ElieSatPanelInstaller.sh?t=$(date +%s)" -O - | /bin/sh
 
 ## === # Magic Panel Max - Hamdy Ahmed # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/Ham-ahmed/G12/refs/heads/main/MagicPanelMax-install.sh -O - | /bin/sh
