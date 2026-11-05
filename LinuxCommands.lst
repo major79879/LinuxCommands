@@ -90,6 +90,9 @@ wget -O /tmp/maxyatv.ipk 'https://raw.githubusercontent.com/popking159/skins/mai
 ## === # AJPanel - AMAJamry # = # لوحة أدوات متكاملة لإدارة إضافات وأدوات إنيجما فى مكان واحد # === ##
 wget https://raw.githubusercontent.com/AMAJamry/AJPanel/main/installer.sh -O - | /bin/sh
 
+## === # E2 Store Panel - John Kamel & Robin John # = # لوحة أدوات وإضافات متكاملة للإنيجما # === ##
+https://raw.githubusercontent.com/major79879/E2-Store-Panel/refs/heads/main/installer.sh
+
 ## === # Linuxsat panel - Belfagor # = # لوحة شاملة تجمع عشرات الأدوات والإضافات والخدمات # === ##
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/Belfagor2005/LinuxsatPanel/main/installer.sh -O - | /bin/sh
 
