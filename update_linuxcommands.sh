@@ -18,8 +18,8 @@ echo " | |\/| | / _ \   | | |  | | |_) |  | |_) | / _ \ |  \| |  _| | |    "
 echo " | |  | |/ ___ \ _|_| |  | |  _ <   |  __/ / ___ \| |\  | |___| |___ "
 echo " |_|  |_/_/   \_\___|\____/|_| \_\  |_|   /_/   \_\_| \_|_____|_____|"
 echo "                                                                     "
-echo "                  LINUX COMMANDS SCRIPT UPDATER                      "
-echo "              Developed by: John Kamel & Robin John                  "
+echo "                    LINUX COMMANDS SCRIPT UPDATER                    "
+echo "                      Developed by: John Kamel                       "
 echo "====================================================================="
 
 # التأكد من وجود المجلد الهدف
