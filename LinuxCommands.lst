@@ -309,3 +309,6 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/Se
 
 ## === # E2 Currency Pro - Ramzus # = # أداة لمعرفة أسعار العملات والذهب # === #
 wget -qO- https://raw.githubusercontent.com/ramzus007/E2-Currency-Pro/main/installer.sh | sh
+
+## === # Major Cenima Test - John Kamel # = # أداة لعرض وتشغيل الافلام والمسلسلات التي على الهارد بطريقة اخترافية # === #
+wget -O /tmp/enigma2-plugin-extensions-majorcenima_1.1.1_all.ipk "https://github.com/major79879/Major_Addons/raw/refs/heads/main/enigma2-plugin-extensions-majorcenima_1.1.1_all.ipk" && opkg install /tmp/enigma2-plugin-extensions-majorcenima_1.1.1_all.ipk && killall -9 enigma2
